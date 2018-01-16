@@ -1249,6 +1249,11 @@ body{
         background: #d04424 url(../img/apply-enter-icon.png) no-repeat 40px 16px;
         background-size: auto 30px;
     }
+
+    .apply-enter a {
+        color: #fff;
+    }
+
     .app-li-name{
         height:30px;
         line-height: 30px;
