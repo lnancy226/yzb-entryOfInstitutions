@@ -25,6 +25,12 @@ $(function () {
         //关闭actionsheet
         mui('#' + parent.id).popover('toggle');
         // info.innerHTML = "你刚点击了\"" + a.innerHTML + "\"按钮";
-    })
+    });
 
+    $('#picture ul li:eq(0)').on('tap', function () {
+        window.location.href = './jigou-apply.html';
+    });
+    $('#picture ul li:eq(1)').on('tap', function () {
+        window.location.href = './experts-apply.html';
+    });
 })

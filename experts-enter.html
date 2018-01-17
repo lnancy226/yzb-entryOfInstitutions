@@ -64,12 +64,12 @@
 <script src="js/jquery.min.js"></script>
 <script>
     $(function(){
-        $(".app-choose").click(function(){
+        $(".app-choose").on('tap',function(){
             $(".shade").show();
             $(".pop-menu").show();
             $(".select-area").click();
         });
-        $(".pop-cancel").click(function(){
+        $(".pop-cancel").on('tap',function(){
             $(".shade").hide();
             $(".pop-menu").hide();
         });
@@ -79,7 +79,7 @@
         }
         //第一次没有加[0]，点击没有反应，注意获取class时候一个数组，不能给数组添加事件
         //第三个参数表示是否使用捕获，true表示事件是捕获阶段，false表示事件是冒泡阶段
-        $(".pop-ensure")[0].addEventListener("click",popMenu,false);
+        $(".pop-ensure")[0].addEventListener("tap",popMenu,false);
     })
 </script>
 </body>
